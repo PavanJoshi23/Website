@@ -26,8 +26,8 @@ export default function Hero() {
     >
       {/* Background decorations */}
       <div className="absolute inset-0 bg-grid opacity-60 pointer-events-none" />
-      <div className="absolute top-20 -right-40 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-20 -left-40 w-96 h-96 bg-accent-300/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-20 -right-40 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(139,92,246,0.12)' }} />
+      <div className="absolute bottom-20 -left-40 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(139,92,246,0.07)' }} />
 
       <div className="section-container w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -78,7 +78,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={link.label}
-                    className="w-10 h-10 rounded-xl flex items-center justify-center text-text-muted border border-surface-200 bg-surface-0 hover:text-primary-500 hover:border-primary-300 hover:bg-primary-50 hover:scale-110 transition-all duration-200 shadow-card"
+                    className="w-10 h-10 rounded-xl flex items-center justify-center text-text-muted border border-surface-200 bg-surface-0 hover:text-primary-400 hover:border-primary-700 hover:bg-primary-900/40 hover:scale-110 transition-all duration-200 shadow-card"
                   >
                     {Icon && <Icon size={18} />}
                   </a>
@@ -96,13 +96,13 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Outer glow ring */}
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-primary-300 to-accent-300 opacity-20 blur-xl animate-pulse-slow" />
+              <div className="absolute -inset-4 rounded-full blur-xl animate-pulse-slow" style={{ background: 'rgba(139,92,246,0.2)' }} />
 
               {/* Avatar container */}
               <div className="animate-float relative">
                 {/* Gradient border */}
-                <div className="p-1 rounded-full bg-gradient-to-br from-primary-400 via-accent-400 to-primary-300 shadow-glow">
-                  <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-100 to-accent-300/30 flex items-center justify-center overflow-hidden">
+                <div className="p-1 rounded-full shadow-glow" style={{ background: 'linear-gradient(135deg, #a78bfa, #7c3aed, #a78bfa)' }}>
+                  <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-900/60 to-accent-500/10 flex items-center justify-center overflow-hidden">
                     {personal.avatar ? (
                       <img src={personal.avatar} alt={personal.name} className="w-full h-full object-cover" />
                     ) : (
@@ -118,7 +118,7 @@ export default function Hero() {
 
                 {/* Floating badges */}
                 <motion.div
-                  className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-card px-3 py-2 flex items-center gap-2 border border-surface-200"
+                  className="absolute -top-4 -right-4 bg-surface-0 rounded-2xl shadow-card px-3 py-2 flex items-center gap-2 border border-surface-200"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2, type: 'spring', stiffness: 200 }}
@@ -131,7 +131,7 @@ export default function Hero() {
                 </motion.div>
 
                 <motion.div
-                  className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-card px-3 py-2 flex items-center gap-2 border border-surface-200"
+                  className="absolute -bottom-4 -left-4 bg-surface-0 rounded-2xl shadow-card px-3 py-2 flex items-center gap-2 border border-surface-200"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.4, type: 'spring', stiffness: 200 }}

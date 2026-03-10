@@ -14,24 +14,25 @@ export default {
           600: '#7c3aed',
           700: '#6d28d9',
           800: '#5b21b6',
-          900: '#4c1d95',
+          900: '#3b0764',
         },
+        // Removed rose accent — replaced with silver/white (Apple-style)
         accent: {
-          300: '#fda4af',
-          400: '#fb7185',
-          500: '#f43f5e',
+          300: '#f1f5f9',
+          400: '#e2e8f0',
+          500: '#cbd5e1',
         },
         surface: {
-          0:   '#ffffff',
-          50:  '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
+          0:   '#161617',   // Apple dark card — not pure black, slightly lifted
+          50:  '#000000',   // page background — true black
+          100: '#0d0d0d',   // alternate sections
+          200: '#ffffff14', // glass border — rgba white 8%
+          300: '#ffffff22', // stronger glass border
         },
         text: {
-          primary:   '#0f172a',
-          secondary: '#475569',
-          muted:     '#94a3b8',
+          primary:   '#f5f5f7',   // Apple SF Pro white
+          secondary: '#a1a1a6',   // Apple secondary label
+          muted:     '#48484a',   // Apple tertiary label
         },
       },
       fontFamily: {
@@ -73,11 +74,12 @@ export default {
         '300%': '300%',
       },
       boxShadow: {
-        'soft':       '0 2px 15px -3px rgba(139, 92, 246, 0.1), 0 10px 20px -2px rgba(139, 92, 246, 0.04)',
-        'soft-lg':    '0 10px 40px -10px rgba(139, 92, 246, 0.2)',
-        'card':       '0 1px 3px rgba(0,0,0,0.05), 0 4px 16px rgba(139,92,246,0.07)',
-        'card-hover': '0 8px 30px rgba(139,92,246,0.18)',
-        'glow':       '0 0 30px rgba(139,92,246,0.25)',
+        'soft':       '0 2px 20px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06)',
+        'soft-lg':    '0 8px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.08)',
+        'card':       '0 1px 0 0 rgba(255,255,255,0.06) inset, 0 4px 20px rgba(0,0,0,0.5)',
+        'card-hover': '0 1px 0 0 rgba(255,255,255,0.1) inset, 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(139,92,246,0.3)',
+        'glow':       '0 0 60px rgba(139,92,246,0.35)',
+        'glow-sm':    '0 0 20px rgba(139,92,246,0.2)',
       },
     },
   },

@@ -17,3 +17,4 @@ backend/venv/
 *.log
 .idea/
 .vscode/
+deploy/

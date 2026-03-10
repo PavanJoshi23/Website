@@ -51,7 +51,7 @@ export default function Contact() {
               <h3 className="font-bold text-lg text-text-primary">Contact Information</h3>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center flex-shrink-0">
                   <FiMail className="text-primary-500" size={18} />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center flex-shrink-0">
                   <FiMapPin className="text-primary-500" size={18} />
                 </div>
                 <div>
@@ -84,7 +84,7 @@ export default function Contact() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={link.label}
-                        className="w-10 h-10 rounded-xl flex items-center justify-center text-text-muted border border-surface-200 hover:text-primary-500 hover:border-primary-300 hover:bg-primary-50 hover:scale-110 transition-all duration-200"
+                        className="w-10 h-10 rounded-xl flex items-center justify-center text-text-muted border border-surface-200 hover:text-primary-400 hover:border-primary-700 hover:bg-primary-900/40 hover:scale-110 transition-all duration-200"
                       >
                         {Icon && <Icon size={17} />}
                       </a>
@@ -95,10 +95,10 @@ export default function Contact() {
             </div>
 
             {/* Availability card */}
-            <div className="card p-5 bg-gradient-to-br from-primary-50 to-accent-300/10">
+            <div className="card p-5 bg-gradient-to-br from-primary-900/30 to-accent-500/5">
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse-slow" />
-                <span className="text-sm font-semibold text-primary-600">Available for hire</span>
+                <span className="text-sm font-semibold text-primary-300">Available for hire</span>
               </div>
               <p className="text-xs text-text-secondary leading-relaxed">
                 I'm currently open to full-time roles and interesting freelance projects.
@@ -171,7 +171,7 @@ export default function Contact() {
                       initial={{ opacity: 0, y: -8 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
-                      className="flex items-center gap-2 text-green-600 bg-green-50 border border-green-200 rounded-xl p-3 text-sm font-medium"
+                      className="flex items-center gap-2 text-green-400 bg-green-950/40 border border-green-800/50 rounded-xl p-3 text-sm font-medium"
                     >
                       <FiCheckCircle size={16} /> Message sent! I'll get back to you soon.
                     </motion.div>
@@ -181,7 +181,7 @@ export default function Contact() {
                       initial={{ opacity: 0, y: -8 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
-                      className="flex items-center gap-2 text-red-600 bg-red-50 border border-red-200 rounded-xl p-3 text-sm font-medium"
+                      className="flex items-center gap-2 text-red-400 bg-red-950/40 border border-red-800/50 rounded-xl p-3 text-sm font-medium"
                     >
                       <FiAlertCircle size={16} /> Something went wrong. Please try again or email directly.
                     </motion.div>

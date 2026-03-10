@@ -49,7 +49,7 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/85 backdrop-blur-lg shadow-soft border-b border-surface-200'
+            ? 'bg-black/80 backdrop-blur-xl shadow-soft border-b border-surface-200'
             : 'bg-transparent'
         }`}
       >
@@ -76,7 +76,7 @@ export default function Navbar() {
                   onClick={() => handleNavClick(item.id)}
                   className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 cursor-pointer group ${
                     activeId === item.id
-                      ? 'text-primary-600'
+                      ? 'text-primary-400'
                       : 'text-text-secondary hover:text-text-primary'
                   }`}
                 >
@@ -131,7 +131,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             />
             <motion.div
-              className="fixed top-16 inset-x-4 z-50 bg-white rounded-2xl shadow-soft-lg border border-surface-200 overflow-hidden md:hidden"
+              className="fixed top-16 inset-x-4 z-50 bg-zinc-950 rounded-2xl shadow-soft-lg border border-surface-200 overflow-hidden md:hidden"
               initial={{ opacity: 0, y: -16, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -16, scale: 0.96 }}
@@ -147,7 +147,7 @@ export default function Navbar() {
                     onClick={() => handleNavClick(item.id)}
                     className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-150 cursor-pointer ${
                       activeId === item.id
-                        ? 'bg-primary-50 text-primary-600'
+                        ? 'bg-primary-900/40 text-primary-300'
                         : 'text-text-secondary hover:bg-surface-100 hover:text-text-primary'
                     }`}
                   >

@@ -19,7 +19,7 @@ export default function TimelineItem({ item, index, isLast }) {
               <h3 className="font-bold text-lg text-text-primary">{item.role}</h3>
               <p className="text-primary-500 font-semibold text-sm mt-0.5">{item.company}</p>
             </div>
-            <span className="bg-primary-50 text-primary-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-primary-100 whitespace-nowrap">
+            <span className="bg-primary-900/40 text-primary-300 text-xs font-semibold px-3 py-1.5 rounded-full border border-primary-800/50 whitespace-nowrap">
               {item.period}
             </span>
           </div>
