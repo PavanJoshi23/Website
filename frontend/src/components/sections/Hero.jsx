@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiDownload, FiMail, FiGithub, FiLinkedin, FiTwitter, FiArrowDown } from 'react-icons/fi';
 import { personal, socialLinks } from '../../data/portfolioData';
+import AIChatWidget from '../ui/AIChatWidget';
 
 const iconMap = { FiGithub, FiLinkedin, FiTwitter };
 
@@ -42,12 +43,12 @@ export default function Hero() {
             <motion.div variants={itemVariants}>
               <span className="section-tag">
                 <span className="inline-block w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse-slow" />
-                Available for work
+                Open to collaborate
               </span>
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="section-heading text-balance mt-2">
-              Hi, I'm{' '}
+              Hola, I'm{' '}
               <span className="gradient-text">{personal.name}</span>
             </motion.h1>
 
@@ -87,62 +88,15 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right — Avatar / illustration */}
+          {/* Right — AI Chat Widget */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="relative">
-              {/* Outer glow ring */}
-              <div className="absolute -inset-4 rounded-full blur-xl animate-pulse-slow" style={{ background: 'rgba(139,92,246,0.2)' }} />
-
-              {/* Avatar container */}
-              <div className="animate-float relative">
-                {/* Gradient border */}
-                <div className="p-1 rounded-full shadow-glow" style={{ background: 'linear-gradient(135deg, #a78bfa, #7c3aed, #a78bfa)' }}>
-                  <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-900/60 to-accent-500/10 flex items-center justify-center overflow-hidden">
-                    {personal.avatar ? (
-                      <img src={personal.avatar} alt={personal.name} className="w-full h-full object-cover" />
-                    ) : (
-                      <div className="flex flex-col items-center gap-3">
-                        <span className="text-8xl font-black text-primary-300 select-none leading-none">
-                          {personal.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                        <span className="text-primary-400 text-sm font-medium">Your photo here</span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-
-                {/* Floating badges */}
-                <motion.div
-                  className="absolute -top-4 -right-4 bg-surface-0 rounded-2xl shadow-card px-3 py-2 flex items-center gap-2 border border-surface-200"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.2, type: 'spring', stiffness: 200 }}
-                >
-                  <span className="text-lg">⚡</span>
-                  <div>
-                    <p className="text-xs font-bold text-text-primary leading-none">5+ Years</p>
-                    <p className="text-xs text-text-muted">Experience</p>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  className="absolute -bottom-4 -left-4 bg-surface-0 rounded-2xl shadow-card px-3 py-2 flex items-center gap-2 border border-surface-200"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.4, type: 'spring', stiffness: 200 }}
-                >
-                  <span className="text-lg">🚀</span>
-                  <div>
-                    <p className="text-xs font-bold text-text-primary leading-none">30+ Projects</p>
-                    <p className="text-xs text-text-muted">Delivered</p>
-                  </div>
-                </motion.div>
-              </div>
+            <div className="w-full max-w-md">
+              <AIChatWidget />
             </div>
           </motion.div>
         </div>

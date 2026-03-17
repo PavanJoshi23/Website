@@ -98,11 +98,11 @@ export default function Contact() {
             <div className="card p-5 bg-gradient-to-br from-primary-900/30 to-accent-500/5">
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse-slow" />
-                <span className="text-sm font-semibold text-primary-300">Available for hire</span>
+                <span className="text-sm font-semibold text-primary-300">Open to collaborate</span>
               </div>
               <p className="text-xs text-text-secondary leading-relaxed">
-                I'm currently open to full-time roles and interesting freelance projects.
-                Response time is usually within 24 hours.
+                Got an interesting idea or project? I'm always happy to connect and explore
+                opportunities to collaborate. Response time is usually within 24 hours.
               </p>
             </div>
           </AnimatedSection>

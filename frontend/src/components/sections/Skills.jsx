@@ -4,7 +4,7 @@ import AnimatedSection from '../ui/AnimatedSection';
 import SkillCard from '../ui/SkillCard';
 import { skills } from '../../data/portfolioData';
 
-const CATEGORIES = ['All', 'Frontend', 'Backend', 'DevOps'];
+const CATEGORIES = ['All', 'AI/ML', 'Frontend', 'Backend', 'DevOps'];
 
 const containerVariants = {
   hidden: {},

@@ -38,7 +38,7 @@ export default function About() {
             <AnimatedSection delay={0.1}>
               <span className="section-tag">About Me</span>
               <h2 className="section-heading">
-                Passionate about <span className="gradient-text">building things</span> that matter
+                Building <span className="gradient-text">AI systems</span> that actually work
               </h2>
             </AnimatedSection>
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiCode } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { IoPersonSharp } from "react-icons/io5";
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 
 const NAV_ITEMS = [
@@ -61,10 +62,10 @@ export default function Navbar() {
               className="flex items-center gap-2 group cursor-pointer"
             >
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-accent-400 flex items-center justify-center shadow-soft group-hover:shadow-soft-lg transition-shadow">
-                <FiCode className="text-white" size={16} />
+                <IoPersonSharp className="text-white" size={16} />
               </div>
               <span className="font-bold text-text-primary text-lg tracking-tight">
-                Pavan<span className="text-primary-500">.</span>
+                Pavan Joshi<span className="text-primary-500"></span>
               </span>
             </button>
 
@@ -93,7 +94,7 @@ export default function Navbar() {
                 onClick={() => handleNavClick('contact')}
                 className="ml-3 btn-primary text-sm py-2 px-5"
               >
-                Hire Me
+                Let's Talk
               </button>
             </div>
 
@@ -159,7 +160,7 @@ export default function Navbar() {
                     onClick={() => handleNavClick('contact')}
                     className="btn-primary w-full justify-center text-sm py-2.5"
                   >
-                    Hire Me
+                    Let's Talk
                   </button>
                 </div>
               </div>
