@@ -8,4 +8,4 @@ services:
       - key: DEBUG
         value: false
       - key: ALLOWED_ORIGINS
-        value: '["https://YOUR-APP.vercel.app"]'
+        value: '["website-7mz4a8yfw-pavanjoshi2311-5255s-projects.vercel.app"]'
